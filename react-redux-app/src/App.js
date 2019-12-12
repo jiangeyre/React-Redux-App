@@ -14,7 +14,16 @@ function App() {
   return (
     <div className="App">
       <div>
-        <header style={{margin: '2% auto', fontSize: '2.5rem', fontWeight: 900}}>Welcome to the SHINY PokéDex!</header>
+        <header style={{
+          margin: '2% auto', 
+          fontSize: '2.5rem', 
+          fontWeight: 900,
+          backgroundColor: 'white',
+          border: '3px solid black',
+          boxShadow: '3px 5px 3px black'
+        }}>
+          Welcome to the SHINY PokéDex!
+        </header>
         <PokeList />
       </div>
     </div>
