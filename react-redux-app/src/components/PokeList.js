@@ -15,7 +15,7 @@ const PokeList = (props) => {
 
     return (
         <div>
-            <div style={{display: "flex", flexDirection: "row", width: 700, flexWrap: "wrap", margin: "0 auto", backgroundColor: 'white', border: '1px solid black'}}>
+            <div style={{display: "flex", flexDirection: "row", width: 700, flexWrap: "wrap", margin: "0 auto", backgroundColor: 'white', border: '5px solid black'}}>
                 {props.pokemon.map(pokemon => {
                     return <Pokemon pokemon={pokemon} url={pokemon.url} key={pokemon.id} />
                 })}
