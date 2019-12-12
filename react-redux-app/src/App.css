@@ -4,3 +4,15 @@
   text-align: center;
   font-family: 'Roboto Mono', monospace;
 }
+
+.imgs figure img {
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.imgs figure:hover img{
+  -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
