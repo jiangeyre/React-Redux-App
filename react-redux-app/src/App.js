@@ -13,7 +13,10 @@ function App() {
 
   return (
     <div className="App">
-      <PokeList />
+      <div>
+        <header style={{margin: '2% auto', fontSize: '2rem', fontWeight: 900}}>Welcome to the SHINY PokéDex!</header>
+        <PokeList />
+      </div>
     </div>
   );
 }
