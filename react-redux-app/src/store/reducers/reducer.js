@@ -36,13 +36,13 @@ const reducer = (state = initialState, action) => {
             }
 
         case FETCH_NEXT_SUCCESS:
-            console.log("next in reducer")
+            console.log("next in reducer");
             return {
                 state
             }
 
         default:
-            return  state
+            return state;
     }
 };
 
