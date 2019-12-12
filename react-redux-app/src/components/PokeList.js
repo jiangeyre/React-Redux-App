@@ -15,14 +15,36 @@ const PokeList = (props) => {
 
     return (
         <div>
-            <div style={{display: "flex", flexDirection: "row", width: 700, flexWrap: "wrap", margin: "0 auto", backgroundColor: 'white', border: '5px solid black'}}>
+            <div style={{display: "flex", flexDirection: "row", width: 700, flexWrap: "wrap", margin: "0 auto", backgroundColor: 'white', border: '5px solid black', boxShadow: '3px 5px 3px black'}}>
                 {props.pokemon.map(pokemon => {
                     return <Pokemon pokemon={pokemon} url={pokemon.url} key={pokemon.id} />
                 })}
             </div>
-            <div style={{display: "flex", justifyContent: "space-evenly", width: 500, margin: "2% auto"}}>
-                <button onClick={() => props.nextPokemon(props.lastURL)} style={{fontFamily: 'Roboto Mono, monospace'}}> {backArrow} Back </button>
-                <button onClick={() => props.nextPokemon(props.nextURL)} style={{fontFamily: 'Roboto Mono, monospace'}}> Next > </button>
+            <div style={{display: "flex", justifyContent: "space-around", width: 700, margin: "2% auto"}}>
+                <button 
+                    onClick={() => props.nextPokemon(props.lastURL)} 
+                    style={{
+                        fontFamily: 'Roboto Mono, monospace',
+                        width: 120,
+                        height: 30,
+                        border: '2px solid black',
+                        fontSize: '1.2rem',
+                        boxShadow: '3px 5px 3px black'
+                    }}> 
+                    {backArrow} Back 
+                </button>
+                <button 
+                    onClick={() => props.nextPokemon(props.nextURL)} 
+                    style={{
+                        fontFamily: 'Roboto Mono, monospace',
+                        width: 120,
+                        height: 30,
+                        border: '2px solid black',
+                        fontSize: '1.2rem',
+                        boxShadow: '3px 5px 3px black'
+                    }}> 
+                    Next > 
+                </button>
             </div>
         </div>
         
